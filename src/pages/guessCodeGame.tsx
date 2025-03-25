@@ -85,7 +85,7 @@ export default function GuessCodeGame() {
           </Button>
           {feedback && (
             <motion.p
-              className={`mt-5 text-md font-semibold ${
+              className={`mt-5 text-3xl font-bold ${
                 feedback.includes("Correct") ? "text-cyan-400" : "text-red-500"
               }`}
               initial={{ opacity: 0 }}

@@ -1,54 +1,72 @@
-# React + TypeScript + Vite
+# 💝 Memory & Fun Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personalized React + TypeScript project that includes interactive games such as:
 
-Currently, two official plugins are available:
+- 🧠 **Quiz Game**: A mix of multiple-choice and free-answer questions
+- 🎲 **Dare Game**: Fun dares revealed one by one
+- 🎁 **Gift Game**: Choose stores, types, and styles
+- 🍽️ **Restaurant Challenge**: Themes, roles, and story-based dining adventure
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+All styled with Tailwind CSS and animated with Framer Motion for a magical and clean UI experience.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 How to Run
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
+```bash
+npm install install
+npm run dev
+```
+
+> Or use `npm` or `yarn` if you prefer.
+
+---
+
+## 🔒 Private Data Setup
+
+For privacy, quiz answers and dare content are not included in the repo. You must create a file manually:
+
+### 📁 `src/data/game-data.private.json`
+
+Make sure this file is listed in `.gitignore`.
+
+### JSON Format:
+
+```json
+{
+  "quiz": [
+    {
+      "type": "multiple",
+      "question": "What's my favorite color?",
+      "options": ["Blue", "Red", "Green", "Yellow"],
+      "answer": "BLUE"
     },
-  },
-})
+    {
+      "type": "free",
+      "question": "What's the name of the first movie we watched together?",
+      "answer": "INCEPTION"
+    }
+  ],
+  "dares": [
+    "Do 10 jumping jacks 💪",
+    "Speak like a robot for 1 minute 🤖"
+  ]
+}
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+> You can customize it however you want. Just keep the format.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 🛡️ Tech Stack
+
+- React + TypeScript
+- Tailwind CSS
+- Framer Motion
+
+---
+
+## 📦 Folder Structure
+
+
+Made with 💙 for birthday idea
