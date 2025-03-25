@@ -13,6 +13,9 @@ dist-ssr
 *.local
 
 game-data.private.json
+# Private standalone clue page
+/private/secret-journal.html
+
 
 # Editor directories and files
 .vscode/*
