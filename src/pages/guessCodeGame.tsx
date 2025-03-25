@@ -10,6 +10,7 @@ export default function GuessCodeGame() {
   const inputRef = useRef<HTMLInputElement>(null);
   const navigate = useNavigate();
 
+  // SECRET CODE WHO WILL BE USED 
   const secretCode = "1903";
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
