@@ -80,7 +80,7 @@ export default function GuessCodeGame() {
             maxLength={4}
             className="absolute opacity-0 pointer-events-none"
           />
-          <Button className="cursor-pointer w-full bg-blue-700 hover:bg-blue-800 text-white transition-all duration-200" onClick={handleSubmit}>
+          <Button className="cursor-pointer w-full bg-gradient-to-b from-gray-800 to-blue-900 hover:bg-blue-800 text-white transition-all duration-200" onClick={handleSubmit}>
             Submit
           </Button>
           {feedback && (

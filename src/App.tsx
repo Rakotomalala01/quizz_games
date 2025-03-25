@@ -5,6 +5,8 @@ import GuessCodeGame from './pages/guessCodeGame';
 import FuturePlans from './pages/futurPlanPage';
 import JarOfChoicesWin from './pages/jarOfChoicesPage';
 import ChooseOrders from './pages/chooseOrders';
+import QuizGame from './pages/quizzGame';
+import DareGame from './pages/dareGame';
 
 function App() {
   return (
@@ -14,6 +16,11 @@ function App() {
         <Route path="/jarOfChoices" element={<JarOfChoicesWin />} />
         <Route path="/chooseOrders" element={<ChooseOrders />} />
         <Route path="/futurePlans" element={<FuturePlans />} />
+        <Route path="/quizGames" element={<QuizGame />} />
+        <Route path="/dareGames" element={<DareGame />} />
+
+
+
 
 
 
