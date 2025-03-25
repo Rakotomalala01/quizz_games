@@ -2,10 +2,12 @@
 
 A personalized React + TypeScript project that includes interactive games such as:
 
+- 🔐 **Guess Code Game**: Find the secret 4-digit code to unlock the next game (you can create a separate page with clues or an indice for more mystery!)
 - 🧠 **Quiz Game**: A mix of multiple-choice and free-answer questions
 - 🎲 **Dare Game**: Fun dares revealed one by one
 - 🎁 **Gift Game**: Choose stores, types, and styles
 - 🍽️ **Restaurant Challenge**: Themes, roles, and story-based dining adventure
+
 
 All styled with Tailwind CSS and animated with Framer Motion for a magical and clean UI experience.
 
@@ -14,8 +16,8 @@ All styled with Tailwind CSS and animated with Framer Motion for a magical and c
 ## 🚀 How to Run
 
 ```bash
-npm install install
-npm run dev
+pnpm install
+pnpm dev
 ```
 
 > Or use `npm` or `yarn` if you prefer.
@@ -26,7 +28,7 @@ npm run dev
 
 For privacy, quiz answers and dare content are not included in the repo. You must create a file manually:
 
-### 📁 `src/data/game-data.private.json`
+### 📁 `src/game-data.private.json`
 
 Make sure this file is listed in `.gitignore`.
 
@@ -68,5 +70,17 @@ Make sure this file is listed in `.gitignore`.
 
 ## 📦 Folder Structure
 
+```
+src/
+├── pages/
+│   ├── QuizGame.tsx
+│   ├── DareGame.tsx
+│   ├── GiftGame.tsx
+│   ├── GuessCodeGame.tsx
+│   └── ChooseRestaurant.tsx
+├── game-data.private.json (in src/, private, not committed)
+```
 
-Made with 💙 for birthday idea
+---
+
+Made with 💙 for someone special.
