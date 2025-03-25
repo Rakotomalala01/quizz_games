@@ -7,6 +7,8 @@ import JarOfChoicesWin from './pages/jarOfChoicesPage';
 import ChooseOrders from './pages/chooseOrders';
 import QuizGame from './pages/quizzGame';
 import DareGame from './pages/dareGame';
+import GiftGame from './pages/giftGame';
+import ChooseRestaurant from './pages/chooseRestaurant';
 
 function App() {
   return (
@@ -18,13 +20,8 @@ function App() {
         <Route path="/futurePlans" element={<FuturePlans />} />
         <Route path="/quizGames" element={<QuizGame />} />
         <Route path="/dareGames" element={<DareGame />} />
-
-
-
-
-
-
-
+        <Route path="/giftGame" element={<GiftGame />} />
+        <Route path="/chooseRestaurant" element={<ChooseRestaurant />} />
       </Routes>
     </Router>
   );
