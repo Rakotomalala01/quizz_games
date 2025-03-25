@@ -6,7 +6,7 @@ export default function JarOfChoicesWin() {
   const navigate = useNavigate();
 
   const handleNext = () => {
-    navigate("/next-phase"); // Replace with your actual next page route
+    navigate("/chooseOrders"); // Replace with your actual next page route
   };
 
   return (
@@ -47,7 +47,7 @@ export default function JarOfChoicesWin() {
         </motion.div>
 
         <Button
-          className="mt-8  bg-gradient-to-b from-gray-800 to-blue-900 hover:bg-blue-700 text-white text-lg font-semibold px-8 py-3"
+          className="cursor-pointer mt-8  bg-gradient-to-b from-gray-800 to-blue-900 hover:bg-blue-700 text-white text-lg font-semibold px-8 py-3"
           onClick={handleNext}
         >
           OPEN

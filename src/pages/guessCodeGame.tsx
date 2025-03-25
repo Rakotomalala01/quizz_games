@@ -19,7 +19,7 @@ export default function GuessCodeGame() {
 
   const handleSubmit = () => {
     if (input === secretCode) {
-      setFeedback("🎉 Correct! Ready for the quiz!");
+      setFeedback("🎉 Correct!");
       setTimeout(() => navigate("/jarOfChoices"), 1000);
     } else {
       setFeedback("❌ Wrong code. Try again.");

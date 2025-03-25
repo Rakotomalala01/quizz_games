@@ -12,8 +12,9 @@ function App() {
       <Routes>
         <Route path="/" element={<GuessCodeGame />} />
         <Route path="/jarOfChoices" element={<JarOfChoicesWin />} />
-        <Route path="/futurePlans" element={<FuturePlans />} />
         <Route path="/chooseOrders" element={<ChooseOrders />} />
+        <Route path="/futurePlans" element={<FuturePlans />} />
+
 
 
 
