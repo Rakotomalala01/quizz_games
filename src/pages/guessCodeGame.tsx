@@ -33,7 +33,7 @@ export default function GuessCodeGame() {
   }, []);
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#0a0f1a] via-[#0e1b2d] to-[#162e4d] p-4 relative">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-[#0a0f1a] via-[#0e1b2d] to-[#162e4d] p-4 relative space-y-6">
       <style jsx>{`
         @keyframes glow {
           0%, 100% {
@@ -49,6 +49,8 @@ export default function GuessCodeGame() {
         }
       `}</style>
 
+      <h1 className="text-3xl font-bold text-cyan-300 text-center">🧩 Hello dear visitor </h1>
+
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -58,7 +60,7 @@ export default function GuessCodeGame() {
         <Card
           className="glow-animation relative rounded-2xl bg-[#0f172a]/60 backdrop-blur-md p-6 text-center border border-blue-900 ring-2 ring-blue-500/40"
         >
-          <h1 className="text-2xl font-bold mb-4 text-blue-300">🔐 Enter the Secret Code</h1>
+          <h1 className="text-2xl font-bold mb-4 text-blue-300">🔐 Crack the Secret Code</h1>
           <div
             className="flex justify-center gap-4 mb-6 cursor-pointer"
             onClick={() => inputRef.current?.focus()}
