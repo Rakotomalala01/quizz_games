@@ -2,14 +2,20 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
+import gameData from './../game-data.private.json';
 
-const dareCards = [
-  "Do 10 jumping jacks 💪",
-  "Speak like a robot for 1 minute 🤖",
-  "Act out your favorite movie scene 🎬",
-  "Sing a line from a random song 🎤",
-  "Tell a funny story or joke 😂",
-];
+
+const dareCards = gameData.dares;
+
+
+// Exemples of Dares Cards
+// const dareCards = [
+//   "Do 10 jumping jacks 💪",
+//   "Speak like a robot for 1 minute 🤖",
+//   "Act out your favorite movie scene 🎬",
+//   "Sing a line from a random song 🎤",
+//   "Tell a funny story or joke 😂",
+// ];
 
 export default function DareGame() {
     const navigate = useNavigate();
@@ -25,6 +31,9 @@ export default function DareGame() {
     return (
         <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-[#0a0f1a] via-[#0e1b2d] to-[#162e4d] p-6 text-white space-y-10">
             <h1 className="text-3xl font-bold text-cyan-300">🎯 Dare Challenge</h1>
+            <p className="text-xl text-gray-300">
+                    Depending on the previous Score the gameMasters will do a dare for each points the user have
+            </p>
             {showInstructions ? (
                 <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -32,8 +41,9 @@ export default function DareGame() {
                 transition={{ duration: 0.5 }}
                 className="max-w-xl text-center space-y-4"
                 >
-                <p className="text-sm text-gray-300">
-                    Depending on the previous Score the gameMasters will do a dare for each points the user have
+
+                <p className="text-xl text-gray-300">
+                    Egg: 3pts Game masters will do 3 dares and the users 2 dares. The total will be five
                 </p>
                 <Button onClick={() => setShowInstructions(false)} className="w-full mt-4 cursor-pointer mt-4 w-full hover:bg-blue-900">
                     Let's Go!

@@ -26,7 +26,7 @@ export default function FuturePlans() {
 
         <Card className="glow-animation bg-[#1e293b]/70 backdrop-blur-md p-6 rounded-2xl border border-blue-800 shadow-lg">
           <h2 className="text-2xl font-semibold text-blue-300 mb-4 text-center">🔮 Future Plans</h2>
-          <p className="text-gray-300 text-center">F I N D:</p>
+          <p className="text-gray-300 text-center">F I N D :</p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="bg-[#0f172a] border border-cyan-700 rounded-xl p-4 shadow-inner">
               <h2 className="text-xl font-semibold text-cyan-400 mb-2">Something I will do for you 💙</h2>
@@ -39,7 +39,7 @@ export default function FuturePlans() {
             </div>
           </div>
       
-          <h2 className="text-white mt-4 text-center">We will open the content tomorrow 🎁</h2>
+          <h2 className="text-white mt-4 text-center">We will write it in an paper and open the content tomorrow 🎁</h2>
         </Card>
       </div>
 

@@ -3,14 +3,19 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
+import gameData from './../game-data.private.json';
 
-const questions = [
-  {
-    type: "multiple",
-    question: "What's my favorite color?",
-    options: ["Blue", "Red", "Green", "Yellow"],
-    answer: "BLUE",
-  },
+const questions = gameData.quiz;
+
+//EXEMPLES OF QUIZZ QUESTIONS 
+
+// const questions = [
+//   {
+//     type: "multiple",
+//     question: "What's my favorite color?",
+//     options: ["Blue", "Red", "Green", "Yellow"],
+//     answer: "BLUE",
+//   },
 //   {
 //     type: "free",
 //     question: "What's the name of the first movie we watched together?",
@@ -22,7 +27,7 @@ const questions = [
 //     options: ["Monday", "Friday", "Sunday", "Saturday"],
 //     answer: "SATURDAY",
 //   },
-];
+// ];
 
 export default function QuizGame() {
   const navigate = useNavigate();
@@ -148,7 +153,7 @@ export default function QuizGame() {
 
             {answered && currentIndex === questions.length - 1 && (
             <div className="mt-6 flex flex-col items-center gap-4">
-                <p className="text-green-400 font-bold text-xl">🎉 Quiz Completed!</p>
+                <p className="text-green-400 font-bold text-xl">🎉 Quiz Completed with {score}pts! </p>
                 <Button
                 onClick={() => navigate("/dareGames")}
                 className="cursor-pointer bg-gradient-to-b from-gray-800 to-blue-900 hover:from-blue-800 hover:to-blue-950 text-white text-lg px-6 py-3 rounded-md shadow-md"
