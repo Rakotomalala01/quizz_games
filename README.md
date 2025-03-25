@@ -16,8 +16,8 @@ All styled with Tailwind CSS and animated with Framer Motion for a magical and c
 ## 🚀 How to Run
 
 ```bash
-pnpm install
-pnpm dev
+npm install
+npm run dev
 ```
 
 > Or use `npm` or `yarn` if you prefer.
@@ -83,4 +83,4 @@ src/
 
 ---
 
-Made with 💙 for someone special.
+Made with 💙 for birthday occasions
