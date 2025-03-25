@@ -1,13 +1,24 @@
+// App.jsx
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import GuessCodeGame from './pages/guessCodeGame';
+import FuturePlans from './pages/futurPlanPage';
+import JarOfChoicesWin from './pages/jarOfChoicesPage';
+import ChooseOrders from './pages/chooseOrders';
 
 function App() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center p-8 bg-white rounded-2xl shadow-lg">
-        <h1 className="text-3xl font-bold text-blue-600 mb-4">Quiz Game</h1>
-        <p className="text-gray-600">Start building your quiz here!</p>
-      </div>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<GuessCodeGame />} />
+        <Route path="/jarOfChoices" element={<JarOfChoicesWin />} />
+        <Route path="/futurePlans" element={<FuturePlans />} />
+        <Route path="/chooseOrders" element={<ChooseOrders />} />
+
+
+
+      </Routes>
+    </Router>
   );
 }
 
