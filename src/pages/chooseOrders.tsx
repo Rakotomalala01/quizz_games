@@ -38,7 +38,7 @@ export default function ChooseOrders() {
         className="flex flex-col items-center"
       >
         <h1 className="text-3xl font-bold text-white text-center mb-2">
-          Choose the game order
+          Choose the card for the next game order in the jar of choices
         </h1>
         <p className="text-xl text-gray-300">
               What games we will play first and what we will play last

@@ -19,7 +19,7 @@ export default function JarOfChoicesWin() {
       >
 
         <h1 className="text-2xl font-bold text-white mb-6 text-center">
-           You unlocked the Jar of Choices 
+           Congrats You unlocked the Jar of Choices
         </h1>
 
         <motion.div
@@ -50,7 +50,7 @@ export default function JarOfChoicesWin() {
           className="cursor-pointer mt-8  bg-gradient-to-b from-gray-800 to-blue-900 hover:bg-blue-700 text-white text-lg font-semibold px-8 py-3"
           onClick={handleNext}
         >
-          OPEN
+          OPEN 
         </Button>
       </motion.div>
     </div>
