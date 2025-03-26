@@ -9,9 +9,9 @@ import { Home } from "lucide-react";
 const restaurantThemes = ["Asian", "African", "European"];
 const challenges = ["Role Swap", "Try Something New And Weird"];
 const twists = [
-  "Sorceress Jil & Dumby Prince Saul",
+  "Dumby Prince Saul & Sorceress Nicole",
   "Killer Loki & Inspector Selene ",
-  "Songwriter Loki & Big Fans Samantha"
+  "Songwriter Jean & Big Fans Samantha"
 ];
 
 export default function ChooseRestaurant() {
