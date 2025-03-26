@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 
 const stores = ["Zarah", "Uniqlo", "H&M"];
 const types = ["You Pick", "We Pick"];
-const styles = ["Old-money", "Sexy", "Casual"];
+const styles = ["Old-money", "Sexy", "Streetwear"];
 
 export default function GiftGame() {
   const [selectedStore, setSelectedStore] = useState<number | null>(null);
