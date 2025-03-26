@@ -61,7 +61,7 @@ export default function GuessCodeGame() {
         <Card
           className="glow-animation relative rounded-2xl bg-[#0f172a]/60 backdrop-blur-md p-6 text-center border border-blue-900 ring-2 ring-blue-500/40"
         >
-          <h1 className="text-2xl font-bold mb-4 text-blue-300">🔐 Crack the Secret Code</h1>
+          <h1 className="text-2xl font-bold mb-4 text-blue-300">🔐 Crack the 4 Digits Secret Code</h1>
           <div
             className="flex justify-center gap-4 mb-6 cursor-pointer"
             onClick={() => inputRef.current?.focus()}
